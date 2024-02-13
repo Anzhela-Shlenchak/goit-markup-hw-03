@@ -29,8 +29,7 @@ button {
     display: flex;
     width: 1158px;
     max-width: 100%;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding: 0 15px;
     margin-left:0;
     margin-right:0;
 }
@@ -42,7 +41,6 @@ button {
     height: 72px;
     background-color: #fff;
     display: inline-flex;
-    padding: 0 15px;
 }
 nav {
     display: flex;
@@ -72,7 +70,6 @@ nav {
     display: flex;
     gap: 40px;
     align-items:baseline;
-    padding: 24px 0;
 }
 .menu-link {
 font-family: "Roboto", sans-serif;
@@ -82,6 +79,7 @@ font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding-right: 332px;
+    padding: 24px 0;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -289,6 +287,7 @@ padding: 120px 0;
 color: #F4F4FD;
 line-height: 1.17;
 letter-spacing: 0.03em;
+display: inline-block;
 }
 .conclusion {
     color: #F4F4FD;
