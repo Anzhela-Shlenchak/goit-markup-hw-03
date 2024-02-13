@@ -21,6 +21,7 @@ img {
 }
 a {
     text-decoration: none;
+    display: inline-block;
 }
 button {
     cursor: pointer;
@@ -264,6 +265,7 @@ padding: 120px 0;
     row-gap: 48px;
 }
 .portfolio {
+    width: 100%;
     width: calc((100% - 48px) / 3);
 }
 .name-portfolio {
@@ -287,7 +289,7 @@ padding: 120px 0;
 color: #F4F4FD;
 line-height: 1.17;
 letter-spacing: 0.03em;
-display: inline-block;
+
 }
 .conclusion {
     color: #F4F4FD;
