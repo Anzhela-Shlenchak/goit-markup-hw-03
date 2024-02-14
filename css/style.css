@@ -260,9 +260,9 @@ padding: 120px 0;
     height: 420px;
     background-color: #fff;
     display: flex;
-    row-gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
-    column-gap: 48px;
+    column-gap: 24px;
     
 }
 .portfolio {
