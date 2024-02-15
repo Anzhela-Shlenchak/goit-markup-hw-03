@@ -27,7 +27,6 @@ button {
     cursor: pointer;
 }
 .container {
-    display: flex;
     width: 1158px;
     max-width: 100%;
     padding: 0 15px;
@@ -281,8 +280,6 @@ padding: 120px 0;
 
 .page-footer {
     background: #2E2F42;
-    width: 1440px;
-    height: 312px;
     padding: 100px 0;
 }
 .logo-footer {
