@@ -47,13 +47,15 @@ section {
     padding: 24px 0;
     align-items: center; 
 }
-nav {
+.page-nav {
     display: flex;
+    align-items: center;
 }
 .logo-header { 
     color: #2e2f42;
     line-height: 1.17;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
+    
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -63,12 +65,10 @@ nav {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        padding: 24px 76px 24px 156px;
+        margin-right: 76px;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: row;
         gap: 0px;
+        display: inline-block;
 }
 .menu {
     display: flex;
@@ -78,6 +78,9 @@ nav {
     gap: 40px;
     
 }
+.menu-item {
+    padding: 24px 0;
+}
 .menu-link {
 font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -86,7 +89,7 @@ font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding-right: 332px;
-    padding: 24px 0;
+    
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -218,7 +221,7 @@ background: #404bbf;
         color: #2E2F42;
         text-align: center;
         text-transform: capitalize;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 .third-section {
 background-color: #F4F4FD;
@@ -231,16 +234,17 @@ padding: 120px 0;
     border-radius: 0 0 4px 4px;
     padding: 0 156px;
     display: flex;
-    width: calc((100% - 72px) / 4);
+    
     align-items: center;
     justify-content: center;
     flex-direction:row;
-    gap: 32px;
+    gap: 24px;
 }
 
 .team-foto {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
 .team-foto-img {
     margin-bottom: 36px;
@@ -276,10 +280,10 @@ padding: 120px 0;
     row-gap: 48px;
     flex-wrap: wrap;
     column-gap: 24px;
-    width: calc((100% - 48px) / 3);
+    
 }
 .portfolio {
-    
+    width: calc((100% - 48px) / 3);
 }
 .name-portfolio {
     padding: 32px 16px;
@@ -303,7 +307,8 @@ padding: 120px 0;
 color: #F4F4FD;
 line-height: 1.17;
 letter-spacing: 0.03em;
-padding-bottom: 16px;
+margin-bottom: 16px;
+display: inline-block;
 }
 .conclusion {
     color: #F4F4FD;
