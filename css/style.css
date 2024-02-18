@@ -33,8 +33,7 @@ button {
     margin: 0 auto;
 }
 .head-container {
-    display: flex;
-    align-items: center;
+
 }
 section {
     padding: 120px 0;
@@ -43,7 +42,7 @@ section {
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     background-color: #fff;
-    display: inline-flex;
+    display: flex;
     padding: 24px 0;
     align-items: center; 
 }
@@ -187,7 +186,6 @@ background: #404bbf;
 .page-benefits {
     display: flex;
     gap: 24px;
-    
 }
 .our-benefits {
     padding: 120px 0;
@@ -234,7 +232,6 @@ padding: 120px 0;
     border-radius: 0 0 4px 4px;
     padding: 0 156px;
     display: flex;
-    
     align-items: center;
     justify-content: center;
     flex-direction:row;
@@ -247,10 +244,10 @@ padding: 120px 0;
     width: calc((100% - 72px) / 4);
 }
 .team-foto-img {
-    margin-bottom: 36px;
+    
 }
 .personal {
-    padding: 32px 0;
+    margin: 32px 16px;
     text-align: center;
 }
 .name-title {
@@ -289,7 +286,11 @@ padding: 120px 0;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    text-align: start;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 .fourth-section {
     padding-top: 120px;
