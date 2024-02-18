@@ -30,21 +30,25 @@ button {
     width: 1158px;
     max-width: 100%;
     padding: 0 15px;
-    margin-left:0;
-    margin-right:0;
+    margin: 0 auto;
 }
-.section {
+.head-container {
+    display: flex;
+    align-items: center;
+}
+section {
     padding: 120px 0;
+    max-width: 100%;
 }
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    height: 72px;
     background-color: #fff;
     display: inline-flex;
+    padding: 24px 0;
+    align-items: center; 
 }
 nav {
     display: flex;
-    align-items: center;
 }
 .logo-header { 
     color: #2e2f42;
@@ -60,16 +64,19 @@ nav {
         text-transform: uppercase;
         color: #4d5ae5;
         padding: 24px 76px 24px 156px;
+        display: flex;
+        align-items: center;
         justify-content: flex-start;
-        margin-right: 76px;
-        display: inline-block;
-        margin-bottom: 16px;
-
+        flex-direction: row;
+        gap: 0px;
 }
 .menu {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
     gap: 40px;
-    align-items:baseline;
+    
 }
 .menu-link {
 font-family: "Roboto", sans-serif;
@@ -88,12 +95,12 @@ font-family: "Roboto", sans-serif;
 
 .page-adress {
 font-style: normal;
-padding: 24px 156px;;
+padding: 24px 156px 24px 332px;
+
 }
 .page-contacts {
-    display: flex;
     gap: 40px;
-    justify-content: end;
+    display: flex;
     
 }
 .link-contact {
@@ -103,6 +110,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+padding: 24px 0;
+
 
 }
 .link-contact:hover,
@@ -122,29 +131,28 @@ color: #404bbf;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
-    height: 120px;
     padding: 188px 0;
     max-width: 496px;
     margin-right: auto;
     margin-left: auto;
-
+    margin-bottom: 48px;
+    text-align: center;
 }
 .button {
 font-family: "Roboto", sans-serif;
 background: #4d5ae5;
 font-weight: 500;
+font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #ffffff;
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
-height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 display: block;
 min-width: 169px;
 border: none;
+margin: 0 auto;
 }
 .button:hover,
 .button:focus {
@@ -176,8 +184,10 @@ background: #404bbf;
 .page-benefits {
     display: flex;
     gap: 24px;
+    
 }
 .our-benefits {
+    padding: 120px 0;
     width: calc((100% - 72px) / 4);
 }
 .benefit {
@@ -188,6 +198,7 @@ background: #404bbf;
         letter-spacing: 0.02em;
         color: #2E2F42;
         margin-bottom: 8px;
+        text-align: left;
 }
 .deskription {
     color: #434455;
@@ -207,31 +218,36 @@ background: #404bbf;
         color: #2E2F42;
         text-align: center;
         text-transform: capitalize;
-        margin-bottom: 72px;
+        padding-bottom: 72px;
 }
 .third-section {
 background-color: #F4F4FD;
 padding: 120px 0;
 }
+
 .our-team {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: 264px;
-    height: 380px;
+    padding: 0 156px;
     display: flex;
-    gap: 24px;
+    width: calc((100% - 72px) / 4);
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    gap: 32px;
 }
 
 .team-foto {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+}
+.team-foto-img {
+    margin-bottom: 36px;
 }
 .personal {
     padding: 32px 0;
-
+    text-align: center;
 }
 .name-title {
         font-family: "Roboto", sans-serif;
@@ -255,22 +271,21 @@ padding: 120px 0;
 }
 .our-portfolio {
     border: 1px solid #e7e9fc;
-    width: 360px;
-    height: 420px;
     background-color: #fff;
     display: flex;
     row-gap: 48px;
     flex-wrap: wrap;
     column-gap: 24px;
-    
+    width: calc((100% - 48px) / 3);
 }
 .portfolio {
-    width: calc((100% - 48px) / 3);
+    
 }
 .name-portfolio {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    text-align: start;
 }
 .fourth-section {
     padding-top: 120px;
@@ -281,12 +296,14 @@ padding: 120px 0;
 .page-footer {
     background: #2E2F42;
     padding: 100px 0;
+    padding-right: 1020px;
+    padding-left: 156px;
 }
 .logo-footer {
 color: #F4F4FD;
 line-height: 1.17;
 letter-spacing: 0.03em;
-
+padding-bottom: 16px;
 }
 .conclusion {
     color: #F4F4FD;
