@@ -32,8 +32,9 @@ button {
     padding: 0 15px;
     margin: 0 auto;
 }
-.head-container {
-
+.container-header {
+   display: flex;
+ align-items: center;
 }
 section {
     padding: 120px 0;
@@ -43,18 +44,21 @@ section {
     border-bottom: 1px solid #e7e9fc;
     background-color: #fff;
     display: flex;
-    padding: 24px 0;
-    align-items: center; 
+    
+     
+}
+.head-container {
+    margin-right: auto;
 }
 .page-nav {
     display: flex;
-    align-items: center;
+   
 }
 .logo-header { 
     color: #2e2f42;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    
+    margin-right: 76px;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -64,9 +68,8 @@ section {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        margin-right: 76px;
+        margin-bottom: 16px;
         display: flex;
-        gap: 0px;
         display: inline-block;
 }
 .menu {
