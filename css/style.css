@@ -289,7 +289,6 @@ padding: 120px 0;
 color: #F4F4FD;
 line-height: 1.17;
 letter-spacing: 0.03em;
-margin-bottom: 16px;
 display: inline-block;
 }
 .conclusion {
@@ -299,4 +298,5 @@ display: inline-block;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.02em;
+    margin-top: 16px;
 }
